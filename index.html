@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="set();">
+    <table class="calculatrice" id="calc">
+        <tr>
+            <td colspan="4" class="titre"> <h2> Calculator JS</h2> </td>
+        </tr>
+            <tr> 
+               <td colspan="4" class="calc-res">
+                   <div class="resultat" id="resultat"> </div>
+                </td> 
+            </tr> 
+            <tr> 
+               <td class="num"><button class="bouton" id="sept" onclick="afficher('7')">7</button></td> 
+               <td class="num"><button class="bouton" id="huit" onclick="afficher('8')">8</button></td> 
+               <td class="num"><button class="bouton" id="neuf" onclick="afficher('9')">9</button></td> 
+               <td class="num"><button class="bouton" id="moins" onclick="afficher('-')">-</button></td> 
+            </tr> 
+            <tr> 
+               <td class="num"><button class="bouton" id="quatre" onclick="afficher('4')">4</button></td> 
+               <td class="num"><button class="bouton" id="cinq" onclick="afficher('5')">5</button></td> 
+               <td class="num"><button class="bouton" id="six" onclick="afficher('6')">6</button></td> 
+               <td class="num"><button class="bouton" id="plus" onclick="afficher('+')">+</button></td> 
+            </tr> 
+            <tr> 
+               <td class="num"><button class="bouton" id="un" onclick="afficher('1')">1</button></td> 
+               <td class="num"><button class="bouton" id="deux" onclick="afficher('2')">2</button></td> 
+               <td class="num"><button class="bouton" id="trois"onclick="afficher('3')">3</button></td> 
+               <td class="num"><button class="bouton" id="fois" onclick="afficher('*')">*</button></td> 
+            </tr> 
+            <tr>
+               <td class="num"><button class="bouton" id="zero" onclick="afficher('0')">0</button></td> 
+               <td class="num"><button class="bouton" id="reset"onclick="effacer('res')">res</button></td> 
+               <td class="num"><button class="bouton" id="egale" onclick="calculer()">=</button></td> 
+               <td class="num"><button class="bouton" id="division" onclick="afficher('/')">/</button></td> 
+            </tr> 
+   
+    </table>
+    <script type="text/javascript" src="index.js"> </script>
+
+</body>
+</html>
